@@ -26,7 +26,6 @@ end
 
 def total_even_pairs(src)
   #binding.pry
-  def total_even_pairs(src)
   # Finds the even pairs of number pairs
    even_numbers = src.select {|number_pair| number_pair[0].even? && number_pair[1].even? }
 
@@ -44,7 +43,7 @@ def total_even_pairs(src)
   #  Implicit return here FTW!
    total_even_sum
 end
-  #src.each do |even_pair| 
+  #src.each do |even_pair|
 
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # if both numbers in the pair are even, then add both those numbers to the
