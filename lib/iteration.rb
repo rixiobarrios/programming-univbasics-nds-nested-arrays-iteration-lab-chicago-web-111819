@@ -1,7 +1,7 @@
 require "pry"
 def join_ingredients(src)
   binding.pry
-   src.map do |ingred_pair| 
+   src.map do |ingred_pair|
      "I love #{ingred_pair[0]} and #{ingred_pair[1]} on my pizza"
 end     
    #result = src.map{ |ingred_pair| "I love #{ingred_pair[0]} and #{ingred_pair[1]} on my pizza" }
