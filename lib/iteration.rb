@@ -3,7 +3,7 @@ def join_ingredients(src)
    src.map do |ingred_pair|
      binding.pry
      "I love #{ingred_pair[0]} and #{ingred_pair[1]} on my pizza"
-end     
+end
    #result = src.map{ |ingred_pair| "I love #{ingred_pair[0]} and #{ingred_pair[1]} on my pizza" }
  #result
 
