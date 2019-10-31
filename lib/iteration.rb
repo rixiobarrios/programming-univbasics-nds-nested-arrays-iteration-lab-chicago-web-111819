@@ -1,4 +1,8 @@
 def join_ingredients(src)
+   src.map{ |ingred_pair| "I love #{ingred_pair[0]} and #{ingred_pair[1]} on my pizza" }
+   #result = src.map{ |ingred_pair| "I love #{ingred_pair[0]} and #{ingred_pair[1]} on my pizza" }
+ #result
+
   # Given an Array of 2-element Arrays ( [ [food1, food2], [food3, # food4]....[foodN, foodM]]):
   #
   # Build a new Array that contains strings where each pair of foods is
@@ -9,6 +13,8 @@ def join_ingredients(src)
 end
 
 def find_greater_pair(src)
+  #src.push([number1, number2] =+ [numberN, numberM])
+  src.push()
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # Produce a new Array that contains the larger number of each of the pairs
   # that are in the inner Arrays
