@@ -1,4 +1,6 @@
+require "pry"
 def join_ingredients(src)
+  binding.pry
    src.map{ |ingred_pair| "I love #{ingred_pair[0]} and #{ingred_pair[1]} on my pizza" }
    #result = src.map{ |ingred_pair| "I love #{ingred_pair[0]} and #{ingred_pair[1]} on my pizza" }
  #result
