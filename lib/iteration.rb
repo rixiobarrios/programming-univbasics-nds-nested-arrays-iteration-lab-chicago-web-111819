@@ -26,7 +26,26 @@ end
 
 def total_even_pairs(src)
   #binding.pry
-  src.each do |even_pair| 
+  def total_even_pairs(src)
+  # Finds the even pairs of number pairs
+   even_numbers = src.select {|number_pair| number_pair[0].even? && number_pair[1].even? } 
+   
+  #  Since we have a nested array, we need to 'flatten' them into a single dimensional array, no more array of arrays
+   flattened_array = even_numbers.flatten
+   
+  #  This sets up the variable that we are going to return as we loop thru our flattened array and sum all of our numbers.
+   total_even_sum = 0
+  
+  #  This each loop, loops over each number and adds it to the total_even_sum variable
+   flattened_array.each do |num|
+    total_even_sum += num
+   end
+
+  #  Implicit return here FTW!
+   total_even_sum
+end
+  #src.each do |even_pair| 
+    
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # if both numbers in the pair are even, then add both those numbers to the
   # total
