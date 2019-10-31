@@ -14,7 +14,8 @@ end
 
 def find_greater_pair(src)
   #src.push([number1, number2] =+ [numberN, numberM])
-  src.push()
+  #src.push()
+  src.map {|number_pair|  number_pair.max }
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # Produce a new Array that contains the larger number of each of the pairs
   # that are in the inner Arrays
